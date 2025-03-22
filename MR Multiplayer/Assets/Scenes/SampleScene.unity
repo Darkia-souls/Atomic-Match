@@ -428,122 +428,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2385442581696845898}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &926221177 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3900589965684633313, guid: 3c7e97c2ac5aede4c834e98354f624e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 981317231541604500}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3030828fa1c00a64594136b7c480267f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1216290813 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6896597489476594292, guid: 3c7e97c2ac5aede4c834e98354f624e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 981317231541604500}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3030828fa1c00a64594136b7c480267f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &1235325151
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      propertyPath: m_Name
-      value: Network Manager XR Mutliplayer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1235325153}
-  m_SourcePrefab: {fileID: 100100000, guid: 3967f87296c892e40b57e37bc8601550, type: 3}
---- !u!1 &1235325152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
-    type: 3}
-  m_PrefabInstance: {fileID: 1235325151}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1235325153
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235325152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Id: 6567a5c0-6cd7-4fdc-8e90-ba7f3fc010d0
---- !u!43 &1247418966
+--- !u!43 &866776670
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,6 +593,121 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &926221177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3900589965684633313, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 981317231541604500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3030828fa1c00a64594136b7c480267f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1216290813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6896597489476594292, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 981317231541604500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3030828fa1c00a64594136b7c480267f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1235325151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_Name
+      value: Network Manager XR Mutliplayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1235325153}
+  m_SourcePrefab: {fileID: 100100000, guid: 3967f87296c892e40b57e37bc8601550, type: 3}
+--- !u!1 &1235325152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5087823492143518475, guid: 3967f87296c892e40b57e37bc8601550,
+    type: 3}
+  m_PrefabInstance: {fileID: 1235325151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1235325153
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235325152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Id: 6567a5c0-6cd7-4fdc-8e90-ba7f3fc010d0
 --- !u!1 &1268459686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,7 +2285,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "V\xE4lkommen till Moddas rymdskepp! \nH\xE4r kan du utforska grund\xE4mnen
-    fr\xE5n Jorden och f\xF6rst\xE5 m\xE4nniskor."
+    fr\xE5n Jorden."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: fbb7c6a04be6d8341934b839f24b42e1,
@@ -2373,10 +2373,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 359651005}
     m_Modifications:
+    - target: {fileID: 7852397958502491, guid: 3c7e97c2ac5aede4c834e98354f624e2, type: 3}
+      propertyPath: m_text
+      value: "L\xE4mna Bord"
+      objectReference: {fileID: 0}
     - target: {fileID: 55182664819966065, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_text
       value: Tomt bord
+      objectReference: {fileID: 0}
+    - target: {fileID: 165050487511251657, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: '
+
+
+        Join
+
+        Offentligt Table'
       objectReference: {fileID: 0}
     - target: {fileID: 214611762757575241, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -2442,6 +2456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: XRMultiplayer.AppearanceManger, MRTTT
+      objectReference: {fileID: 0}
+    - target: {fileID: 256718396429322954, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Avbryt
       objectReference: {fileID: 0}
     - target: {fileID: 369705217451509366, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -2539,6 +2558,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Jorden Utforskare
       objectReference: {fileID: 0}
+    - target: {fileID: 1039498912512881511, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC4NDRA"
+      objectReference: {fileID: 0}
     - target: {fileID: 1063140972855613094, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2593,6 +2617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.5647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197161921128202386, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: "L\xE4mna App"
       objectReference: {fileID: 0}
     - target: {fileID: 1261826333093531530, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -2773,6 +2802,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670335161640291941, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Bytt
       objectReference: {fileID: 0}
     - target: {fileID: 1736172434833555141, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -2980,6 +3014,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3524914196155431871, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: "\xC4NDRA NAMN"
+      objectReference: {fileID: 0}
     - target: {fileID: 3561186399602740081, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_Name
@@ -3014,6 +3053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.6901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839425080301508358, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Bytt
       objectReference: {fileID: 0}
     - target: {fileID: 3900589965684633313, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -3064,6 +3108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.3283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328512360095955450, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Bytt
       objectReference: {fileID: 0}
     - target: {fileID: 4528812791627876594, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -3159,6 +3208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023789146528438934, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: "V\xE4lj Spel"
       objectReference: {fileID: 0}
     - target: {fileID: 5226676815425555333, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4108,7 +4162,7 @@ PrefabInstance:
     - target: {fileID: 5740430144374861565, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_text
-      value: Klart
+      value: Klar
       objectReference: {fileID: 0}
     - target: {fileID: 5772482934420823816, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4188,7 +4242,7 @@ PrefabInstance:
     - target: {fileID: 6590322653155213201, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_text
-      value: Backa
+      value: Tillbaka
       objectReference: {fileID: 0}
     - target: {fileID: 6731609293044184846, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4268,7 +4322,7 @@ PrefabInstance:
     - target: {fileID: 7137194868469540462, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_text
-      value: Bord Privacy
+      value: Bord Integritet
       objectReference: {fileID: 0}
     - target: {fileID: 7141340816860247967, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4300,15 +4354,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1704364725}
+    - target: {fileID: 7246651467908126564, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: "V\xE4lj Spel"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7256407535332144862, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Avbryt
+      objectReference: {fileID: 0}
     - target: {fileID: 7463752649906002388, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_text
-      value: Hosta
+      value: Host
       objectReference: {fileID: 0}
     - target: {fileID: 7468860998444494663, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488876113082398497, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Spel
       objectReference: {fileID: 0}
     - target: {fileID: 7608145873694581966, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4416,6 +4485,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062334687785593191, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Bord Namn
+      objectReference: {fileID: 0}
     - target: {fileID: 8072092118239535947, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
       propertyPath: m_Color.b
@@ -4445,6 +4519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: XRMultiplayer.AppearanceManger, MRTTT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122117149190207264, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Host Bord
       objectReference: {fileID: 0}
     - target: {fileID: 8163766797866473708, guid: 3c7e97c2ac5aede4c834e98354f624e2,
         type: 3}
@@ -4615,6 +4694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 0.6901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185587702371643776, guid: 3c7e97c2ac5aede4c834e98354f624e2,
+        type: 3}
+      propertyPath: m_text
+      value: Ange Bord Kod...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -9670,7 +9754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b548a4fc7c8d44a493aa76ca47f7103, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0815ecc6f0124f92a0670dd197bd3fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10674,7 +10758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ta bort object fr\xE5n ditt experimentbord. "
+  m_text: "Ta bort object fr\xE5n ditt utrymme."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: fbb7c6a04be6d8341934b839f24b42e1,
@@ -11559,7 +11643,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1247418966}
+      objectReference: {fileID: 866776670}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
