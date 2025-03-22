@@ -449,7 +449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Jorden Utforskare
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: fbb7c6a04be6d8341934b839f24b42e1,
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EDIT
+  m_text: "\xC4NDRA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: fbb7c6a04be6d8341934b839f24b42e1,
@@ -707,7 +707,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6871642799306233200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 6
+  m_CharacterLimit: 15
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_UseSceneKeyboard: 0
   m_UpdateOnKeyPress: 1
   m_AlwaysObserveKeyboard: 0
-  m_MonitorInputFieldCharacterLimit: 0
+  m_MonitorInputFieldCharacterLimit: 1
   m_ClearTextOnSubmit: 0
   m_ClearTextOnOpen: 0
   m_HideKeyboardOnDisable: 1
@@ -884,8 +884,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SandboxXRI.OptionsPanel, Assembly-CSharp
-        m_MethodName: SubmitNewRoomName
+        m_TargetAssemblyTypeName: XRMPT.PlayerAppearanceMenu, XRMPT
+        m_MethodName: SubmitNewPlayerName
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
