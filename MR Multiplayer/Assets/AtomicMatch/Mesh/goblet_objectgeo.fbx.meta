@@ -1,25 +1,9 @@
 fileFormatVersion: 2
-guid: a73bcd7a67d9c8d478b70f0885d0f10d
+guid: 75216f3c7aea2ab4f9f02ff500990921
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gold
-    second: {fileID: 2100000, guid: c16298de3f15d4715b4d5d704caba333, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: ee59228108e074a8e8dbfc0a71e350da, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: typeStandardSurface1
-    second: {fileID: 2926557707537190794, guid: f396e3429a4864fc2ad497cb3ce5fe2c,
-      type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
