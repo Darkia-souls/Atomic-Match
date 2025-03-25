@@ -1,10 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using Unity.Netcode;
+using XRMultiplayer;
+
 
 namespace AtomicMatch.Scripts
 {
-    public class GameStartManager : MonoBehaviour
+    public class GameStartManager : NetworkBehaviour
     {
         public VideoPlayer videoPlayer;  // Reference to the VideoPlayer component
         public Button playButton;        // Reference to the Play button
@@ -53,3 +58,4 @@ namespace AtomicMatch.Scripts
         }
     }
 }
+
