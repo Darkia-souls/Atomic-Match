@@ -150,7 +150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -452203568679326439, guid: b6c07a1bda5a6f14e9e100877eed985e, type: 3}
+  - {fileID: -7249421897460119609, guid: 1c56337c8b201c1409a1c47059265ca7, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -441,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5489101378670061335}
   m_Layer: 0
-  m_Name: P_trophey_objectgeo
+  m_Name: P_trophey_final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,9 +455,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8529383344887271449}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.0707171, y: 0.00050810137, z: 0.0009024429}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.41691795, y: 0.41691795, z: 0.41691795}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 502961640381000677}
