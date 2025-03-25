@@ -276,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 931721988348969316}
   m_Layer: 0
-  m_Name: battery_objectgeo
+  m_Name: P_battery_objectgeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

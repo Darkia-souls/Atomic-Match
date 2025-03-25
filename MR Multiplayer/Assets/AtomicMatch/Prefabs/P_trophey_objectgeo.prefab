@@ -441,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5489101378670061335}
   m_Layer: 0
-  m_Name: trophey_objectgeo
+  m_Name: P_trophey_objectgeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
