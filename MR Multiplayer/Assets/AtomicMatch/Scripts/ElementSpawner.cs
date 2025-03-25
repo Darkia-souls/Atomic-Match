@@ -18,23 +18,27 @@ namespace AtomicMatch.Scripts
         //This is so that we can access the CurrentMatchingElement in SpawnManager
         public static GameObject CurrentMatchingElement { get; private set; }
 
-        [SerializeField] private List<ElementPair> elementPairs; // All possible elements
+        [SerializeField] private List<ElementPair> allElementPairs; // All possible elements
+        private List<ElementPair> availableElementPairs; // Dynamic list for tracking used elements
         private ElementPair chosenPair;
-    
+        
+        private void Awake()
+        {
+            ResetElementPool(); // Initialize available elements
+        }
+        
         public GameObject GetMatchingElement() => chosenPair.matchingPrefab;
     
         public void SpawnRandomElement()
         {
-            if (elementPairs.Count == 0) return;
-        
-            if (CurrentMatchingElement != null)
+            if (availableElementPairs.Count == 0)
             {
-                Debug.LogWarning("⚠️ ElementSpawner is trying to assign another matching element, but one already exists!");
-                return; // Prevent multiple assignments
+                Debug.LogWarning("⚠️ No available elements left! Resetting pool...");
+                ResetElementPool(); // Reset the list if all elements are used
             }
-
+            
             // Pick a random element-matching pair
-            chosenPair = elementPairs[Random.Range(0, elementPairs.Count)];
+            chosenPair = allElementPairs[Random.Range(0, allElementPairs.Count)];
 
             // Spawn the element
             Instantiate(chosenPair.elementPrefab, transform.position, Quaternion.identity);
@@ -44,6 +48,15 @@ namespace AtomicMatch.Scripts
             {
                 CurrentMatchingElement = chosenPair.matchingPrefab; // ✅ Assign only ONCE
             }
+            
+            // Remove the chosen pair so it won't repeat
+            availableElementPairs.Remove(chosenPair);
         }
+        
+        public void ResetElementPool()
+            {
+                availableElementPairs = new List<ElementPair>(allElementPairs); // Restore all elements
+                Debug.Log("🔄 Element pool reset! Available elements: " + availableElementPairs.Count);
+            }
     }
 }
