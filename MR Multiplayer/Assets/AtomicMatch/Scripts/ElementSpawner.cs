@@ -37,17 +37,18 @@ namespace AtomicMatch.Scripts
                 RoundManagerV3.Instance.EndGame();
                 return;
             }
-            
-            // Pick a random element-matching pair
-            chosenPair = allElementPairs[Random.Range(0, allElementPairs.Count)];
 
+            int index = Random.Range(0, availableElementPairs.Count);
+            chosenPair = availableElementPairs[index];
+            availableElementPairs.RemoveAt(index); // Ensure it's removed correctly
             // Spawn the element
             Instantiate(chosenPair.elementPrefab, transform.position, Quaternion.identity);
 
             // Ensure only ONE instance sets the CurrentMatchingElement
             if (CurrentMatchingElement == null)
             {
-                CurrentMatchingElement = chosenPair.matchingPrefab; // ✅ Assign only ONCE
+                CurrentMatchingElement = null; // Reset before assigning a new one
+                CurrentMatchingElement = chosenPair.matchingPrefab;
             }
             
             // Remove the chosen pair so it won't repeat

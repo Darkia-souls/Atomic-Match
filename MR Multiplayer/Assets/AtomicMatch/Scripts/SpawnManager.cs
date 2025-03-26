@@ -6,26 +6,26 @@ using Chess.Game;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 namespace AtomicMatch.Scripts
-
 {
     public class SpawnManager : MonoBehaviour
     {
         [SerializeField] private GameObject[] objectsToSpawn; // All possible objects
         private List<GameObject> availableObjects; // Tracks available objects
-        private List<ObjectSpawner> spawners = new List<ObjectSpawner>(); // List of spawners
+        private List<ObjectSpawnerAM> spawners = new List<ObjectSpawnerAM>(); // List of spawners
 
         [SerializeField] private ElementSpawner elementSpawner; // Reference to ElementSpawner
         private GameObject currentMatchingObject; // Tracks the spawned correct object
 
         private void Awake()
         {
-            spawners.AddRange(FindObjectsByType<ObjectSpawner>(FindObjectsInactive.Include, FindObjectsSortMode.None));
+            spawners.AddRange(FindObjectsByType<ObjectSpawnerAM>(FindObjectsInactive.Include, FindObjectsSortMode.None));
         }
 
-        void Start()
+        private void Start()
         {
-            RoundManagerV3.Instance.OnGameRestart += ResetAvailableObjects; // Subscribe to game restart
-            StartNextRound(); // Start the first round
+            availableObjects = new List<GameObject>(objectsToSpawn);
+            RoundManagerV3.Instance.OnGameRestart += ResetAvailableObjects;
+            StartNextRound();
         }
 
         public void StartNextRound()
@@ -37,7 +37,6 @@ namespace AtomicMatch.Scripts
             }
 
             elementSpawner.SpawnRandomElement(); // Spawns the element + sets matching element
-
             AssignObjects(); // Assign random objects + matching object
         }
 
@@ -63,12 +62,12 @@ namespace AtomicMatch.Scripts
             ShuffleList(availableObjects); // Shuffle objects
             ShuffleList(spawners); // Shuffle spawners
 
-            List<ObjectSpawner> usedSpawners = new List<ObjectSpawner>();
+            List<ObjectSpawnerAM> usedSpawners = new List<ObjectSpawnerAM>();
 
             for (int i = 0; i < 4; i++) // Spawn 4 random objects
             {
                 GameObject objToSpawn = availableObjects[i];
-                ObjectSpawner spawner = spawners[i];
+                ObjectSpawnerAM spawner = spawners[i];
                 Instantiate(objToSpawn, spawner.transform.position, Quaternion.identity);
                 usedSpawners.Add(spawner);
             }
@@ -81,7 +80,7 @@ namespace AtomicMatch.Scripts
                 return;
             }
 
-            List<ObjectSpawner> availableSpawners = spawners.Except(usedSpawners).ToList();
+            List<ObjectSpawnerAM> availableSpawners = spawners.Except(usedSpawners).ToList();
 
             if (availableSpawners.Count == 0)
             {
@@ -89,7 +88,7 @@ namespace AtomicMatch.Scripts
                 return;
             }
 
-            ObjectSpawner chosenSpawner = availableSpawners[Random.Range(0, availableSpawners.Count)];
+            ObjectSpawnerAM chosenSpawner = availableSpawners[Random.Range(0, availableSpawners.Count)];
 
             // Spawn the correct matching object
             currentMatchingObject = Instantiate(matchingObject, chosenSpawner.transform.position, Quaternion.identity);
