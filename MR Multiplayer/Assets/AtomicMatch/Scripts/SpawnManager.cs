@@ -58,6 +58,22 @@ namespace AtomicMatch.Scripts
                 Debug.LogError("❌ Not enough unique objects to spawn!");
                 return;
             }
+            
+            // Get the correct matching object from ElementSpawner
+            GameObject matchingObject = ElementSpawner.CurrentMatchingElement;
+            if (matchingObject == null)
+            {
+                Debug.LogError("❌ Matching element prefab is NULL! Make sure ElementSpawner runs first.");
+                return;
+            }
+            
+            // Make a copy of available objects and **remove the matching object** before choosing random objects
+            List<GameObject> randomObjects = new List<GameObject>(availableObjects);
+            if (randomObjects.Contains(matchingObject))
+            {
+                randomObjects.Remove(matchingObject);  // Ensure the matching object is NOT included
+            }
+
 
             ShuffleList(availableObjects); // Shuffle objects
             ShuffleList(spawners); // Shuffle spawners
@@ -66,18 +82,10 @@ namespace AtomicMatch.Scripts
 
             for (int i = 0; i < 4; i++) // Spawn 4 random objects
             {
-                GameObject objToSpawn = availableObjects[i];
+                GameObject objToSpawn = randomObjects[i];
                 ObjectSpawnerAM spawner = spawners[i];
                 Instantiate(objToSpawn, spawner.transform.position, Quaternion.identity);
                 usedSpawners.Add(spawner);
-            }
-
-            GameObject matchingObject = ElementSpawner.CurrentMatchingElement;
-
-            if (matchingObject == null)
-            {
-                Debug.LogError("❌ Matching element prefab is NULL!");
-                return;
             }
 
             List<ObjectSpawnerAM> availableSpawners = spawners.Except(usedSpawners).ToList();
