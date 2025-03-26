@@ -26,9 +26,15 @@ namespace AtomicMatch.Scripts
      important, do not change the order*/
         void Start()
         {
+            RoundManagerV3.Instance.OnGameRestart += ResetAvailableObjects; // Subscribe to game restart
+            StartNextRound(); // Start the first round
+        }
+
+        public void StartNextRound()
+        {
             // First, ensure ElementSpawner has run to assign the matching element.
             ElementSpawner spawner = Object.FindFirstObjectByType<ElementSpawner>();
-    
+            
             if (spawner == null)
             {
                 Debug.LogError("❌ ElementSpawner not found in the scene! Make sure ElementSpawner is in the scene.");
@@ -38,14 +44,16 @@ namespace AtomicMatch.Scripts
             spawner.SpawnRandomElement();  // Ensure the element is spawned and matching element is assigned
 
             FindAllSpawners();  // Find all spawners first
-            ResetAvailableObjects(); // Initialize availableObjects BEFORE AssignObjects()
-    
-            if (availableObjects == null || availableObjects.Count == 0)
+            
+            if (!elementSpawner.HasElementsLeft()) // If no elements are left, end game
             {
-                Debug.LogError("❌ availableObjects is still NULL or EMPTY after ResetAvailableObjects!");
+                RoundManagerV3.Instance.EndGame();
                 return;
             }
 
+            elementSpawner.SpawnRandomElement(); // Spawns the element + sets matching element
+
+            
             // Only call AssignObjects once per round.
             if (!hasAssignedObjects)
             {
@@ -53,7 +61,6 @@ namespace AtomicMatch.Scripts
                 hasAssignedObjects = true;  // Mark that we have already assigned objects for this round
             }
         }
-
         private void ResetAvailableObjects()
         {
             if (objectsToSpawn == null || objectsToSpawn.Length == 0)
