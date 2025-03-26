@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 1394aae0248047f43a644e21c762f218
+  - enabled: 1
+    path: Assets/AtomicMatch/Scenes/_MVP.unity
+    guid: e81db395c34762b44a2771f30835bf4e
   - enabled: 0
     path: Assets/MRTabletopAssets/Games/Chess/Scenes/SlicesChess.unity
     guid: 7b10018d527adf74a93f47002beec580
-  - enabled: 1
+  - enabled: 0
     path: Assets/MRTabletopAssets/Games/Chess/Scenes/AtomicMatch.unity
     guid: 52f990a4a2bb34f81937d9270d2bff5e
   m_configObjects:

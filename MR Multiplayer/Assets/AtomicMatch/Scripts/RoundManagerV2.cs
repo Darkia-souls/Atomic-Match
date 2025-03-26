@@ -22,6 +22,7 @@ public class RoundManagerV2 : MonoBehaviour
             pack.SetActive(false);
         }
 
+        periodicTableHint.SetActive(true); // Show the hint at the start
         StartCoroutine(StartGameAfterHint());
     }
 
@@ -34,12 +35,15 @@ public class RoundManagerV2 : MonoBehaviour
 
     private void ActivateNextPack()
     {
-        // Ensure we don't exceed the number of packs
+        if (currentIndex > 0)
+        {
+            atomObjectPacks[currentIndex - 1].SetActive(false); // Deactivate previous pack
+        }
+
         if (currentIndex < atomObjectPacks.Count)
         {
-            // Activate the next pack in order
             atomObjectPacks[currentIndex].SetActive(true);
-            currentIndex++; // Move to the next pack
+            currentIndex++;
         }
         else
         {

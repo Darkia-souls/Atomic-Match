@@ -14,6 +14,8 @@ public class ObjectContainerV2 : MonoBehaviour
             {
                 roundManager.RegisterPoint(containerSide);
             }
+
+            Destroy(other.gameObject);
         }
     }
 }
