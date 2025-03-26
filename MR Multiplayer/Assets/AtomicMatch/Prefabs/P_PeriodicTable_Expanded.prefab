@@ -7010,7 +7010,7 @@ Transform:
   m_GameObject: {fileID: 2537446910153297593}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.00078277127, z: -0, w: 0.99999976}
-  m_LocalPosition: {x: 0.0145, y: 0.1603, z: -0.0637}
+  m_LocalPosition: {x: 0.0167, y: 0.1603, z: -0.0637}
   m_LocalScale: {x: 0.3012598, y: 0.3012599, z: 0.3012598}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10102,8 +10102,8 @@ Transform:
   m_GameObject: {fileID: 3759791499040017973}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.00078277127, z: -0, w: 0.99999976}
-  m_LocalPosition: {x: -0.0622, y: 0.1678, z: -0.0356}
-  m_LocalScale: {x: 0.210812, y: 0.21081208, z: 0.210812}
+  m_LocalPosition: {x: -0.0641, y: 0.1678, z: -0.0356}
+  m_LocalScale: {x: 0.27461204, y: 0.27461213, z: 0.27461204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2610189458353360016}
@@ -17503,7 +17503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2610189458353360016}
   m_Layer: 0
-  m_Name: PeriodicTable_Expanded
+  m_Name: P_PeriodicTable_Expanded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17519,7 +17519,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9999935, z: -0, w: -0.0036214748}
   m_LocalPosition: {x: -0.027, y: -0.039, z: -0.045}
-  m_LocalScale: {x: 0.6351222, y: 0.6351223, z: 0.6351222}
+  m_LocalScale: {x: 1.2903733, y: 1.2903734, z: 1.2903733}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8439068830562251228}
