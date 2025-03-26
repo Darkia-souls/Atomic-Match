@@ -14,7 +14,7 @@ public class ObjectContainer : MonoBehaviour
         }
 
        
-        Destroy(other.gameObject);
+    
     }
 }
 
