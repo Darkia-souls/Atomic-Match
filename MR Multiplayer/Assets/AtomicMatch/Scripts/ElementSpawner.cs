@@ -33,8 +33,9 @@ namespace AtomicMatch.Scripts
         {
             if (availableElementPairs.Count == 0)
             {
-                Debug.LogWarning("⚠️ No available elements left! Resetting pool...");
-                ResetElementPool(); // Reset the list if all elements are used
+                Debug.LogWarning("✅ No more elements left! Game should end.");
+                RoundManagerV3.Instance.EndGame();
+                return;
             }
             
             // Pick a random element-matching pair
@@ -58,5 +59,16 @@ namespace AtomicMatch.Scripts
                 availableElementPairs = new List<ElementPair>(allElementPairs); // Restore all elements
                 Debug.Log("🔄 Element pool reset! Available elements: " + availableElementPairs.Count);
             }
+        
+        public bool HasElementsLeft()
+        {
+            return availableElementPairs.Count > 0;
+        }
+        
+        public void ResetGame()
+        {
+            ResetElementPool();
+        }
+        
     }
 }
