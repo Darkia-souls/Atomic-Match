@@ -548,6 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747314284}
+  - component: {fileID: 747314285}
   m_Layer: 0
   m_Name: RoundManager
   m_TagString: Untagged
@@ -570,6 +571,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 592526360}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747314285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747314283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97bd6d6234314941b18797575bd0275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementSpawner: {fileID: 420965093}
+  spawnManager: {fileID: 2106347539}
 --- !u!1 &781192322
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781192323}
   - component: {fileID: 781192324}
+  - component: {fileID: 781192325}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Untagged
@@ -623,6 +639,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.082397334, y: 0.016906217, z: 0.1}
   m_Center: {x: 0.00069344416, y: -0.0037872307, z: 0}
+--- !u!114 &781192325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781192322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0073963bf2cd7814a9d5f4dc7c5bc610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &859079841
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toy_Destroyer_Networked (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7854809380948210028, guid: b46c44800fc739e4db2a09d1a0a3d1c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8073116613767793469, guid: b46c44800fc739e4db2a09d1a0a3d1c1,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -781,6 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1376390136}
   - component: {fileID: 1376390137}
+  - component: {fileID: 1376390138}
   m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
@@ -824,6 +858,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.082397334, y: 0.016906217, z: 0.1}
   m_Center: {x: 0.00069344416, y: -0.0037872307, z: 0}
+--- !u!114 &1376390138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376390135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0073963bf2cd7814a9d5f4dc7c5bc610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446746737
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toy_Destroyer_Networked
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854809380948210028, guid: b46c44800fc739e4db2a09d1a0a3d1c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8073116613767793469, guid: b46c44800fc739e4db2a09d1a0a3d1c1,
         type: 3}
