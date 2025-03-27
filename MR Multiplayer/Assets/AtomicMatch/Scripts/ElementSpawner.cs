@@ -33,20 +33,22 @@ namespace AtomicMatch.Scripts
         {
             if (availableElementPairs.Count == 0)
             {
-                Debug.LogWarning("⚠️ No available elements left! Resetting pool...");
-                ResetElementPool(); // Reset the list if all elements are used
+                Debug.LogWarning("✅ No more elements left! Game should end.");
+                RoundManagerV3.Instance.EndGame();
+                return;
             }
-            
-            // Pick a random element-matching pair
-            chosenPair = allElementPairs[Random.Range(0, allElementPairs.Count)];
 
+            int index = Random.Range(0, availableElementPairs.Count);
+            chosenPair = availableElementPairs[index];
+            availableElementPairs.RemoveAt(index); // Ensure it's removed correctly
             // Spawn the element
             Instantiate(chosenPair.elementPrefab, transform.position, Quaternion.identity);
 
             // Ensure only ONE instance sets the CurrentMatchingElement
             if (CurrentMatchingElement == null)
             {
-                CurrentMatchingElement = chosenPair.matchingPrefab; // ✅ Assign only ONCE
+                CurrentMatchingElement = null; // Reset before assigning a new one
+                CurrentMatchingElement = chosenPair.matchingPrefab;
             }
             
             // Remove the chosen pair so it won't repeat
@@ -58,5 +60,16 @@ namespace AtomicMatch.Scripts
                 availableElementPairs = new List<ElementPair>(allElementPairs); // Restore all elements
                 Debug.Log("🔄 Element pool reset! Available elements: " + availableElementPairs.Count);
             }
+        
+        public bool HasElementsLeft()
+        {
+            return availableElementPairs.Count > 0;
+        }
+        
+        public void ResetGame()
+        {
+            ResetElementPool();
+        }
+        
     }
 }
