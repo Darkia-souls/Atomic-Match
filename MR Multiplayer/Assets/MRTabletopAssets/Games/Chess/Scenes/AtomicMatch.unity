@@ -758,7 +758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &133877054
 GameObject:
@@ -1069,17 +1069,17 @@ PrefabInstance:
     - target: {fileID: 2068781309076282870, guid: 19da891bac4aa6647a4d406b57528c9c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.008699998
+      value: 0.0123
       objectReference: {fileID: 0}
     - target: {fileID: 2068781309076282870, guid: 19da891bac4aa6647a4d406b57528c9c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008699998
+      value: -0.0366
       objectReference: {fileID: 0}
     - target: {fileID: 2068781309076282870, guid: 19da891bac4aa6647a4d406b57528c9c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01866861
+      value: -0.0185
       objectReference: {fileID: 0}
     - target: {fileID: 2068781309076282870, guid: 19da891bac4aa6647a4d406b57528c9c,
         type: 3}
@@ -1135,6 +1135,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P_makeup_InteractableV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719143685542618671, guid: 19da891bac4aa6647a4d406b57528c9c,
+        type: 3}
+      propertyPath: m_TagString
+      value: correct
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1278,7 +1283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &279795103
 GameObject:
@@ -1967,7 +1972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1001 &510720561
 PrefabInstance:
@@ -2780,7 +2785,7 @@ Transform:
   m_GameObject: {fileID: 956750548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.29, z: -0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2882,7 +2887,7 @@ MonoBehaviour:
   m_MovementSpeed: 2
   m_MovementSpeedVariancePercentage: 0.25
   m_SnapOnEnable: 1
-  m_PositionFollowMode: 1
+  m_PositionFollowMode: 0
   m_MinDistanceAllowed: 0.01
   m_MaxDistanceAllowed: 0.5
   m_TimeUntilThresholdReachesMaxDistance: 3
@@ -3032,7 +3037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &974786281
 GameObject:
@@ -3288,7 +3293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &1105771553
 GameObject:
@@ -4213,6 +4218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round02_Bi
       objectReference: {fileID: 0}
+    - target: {fileID: 8412153018068102647, guid: df8d20751a84c47289767027823926ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 674332821313764376, guid: df8d20751a84c47289767027823926ac, type: 3}
@@ -4257,7 +4267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &1436090437
 GameObject:
@@ -4565,7 +4575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1 &1580460453
 GameObject:
@@ -4907,7 +4917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1001 &1828109342
 PrefabInstance:
@@ -5046,7 +5056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a789a6d5a3c68f41816f832c12fd4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.6
   stopY: 0.4638726
 --- !u!1001 &1828200770
 PrefabInstance:
@@ -5149,7 +5159,7 @@ PrefabInstance:
     - target: {fileID: 8269961152849402323, guid: c064b6fae4c88496eb698b15306ec385,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.97074556
+      value: 0.907
       objectReference: {fileID: 0}
     - target: {fileID: 8269961152849402323, guid: c064b6fae4c88496eb698b15306ec385,
         type: 3}
@@ -5741,7 +5751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.108}
+  m_AnchoredPosition: {x: 0, y: -0.207}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1861542948
