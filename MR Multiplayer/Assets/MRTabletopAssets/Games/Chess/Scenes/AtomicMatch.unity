@@ -2083,6 +2083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerSide: Blue
+  destroySound: {fileID: 0}
 --- !u!114 &514773413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4113,6 +4114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerSide: Red
+  destroySound: {fileID: 0}
 --- !u!114 &1336407318
 MonoBehaviour:
   m_ObjectHideFlags: 0
