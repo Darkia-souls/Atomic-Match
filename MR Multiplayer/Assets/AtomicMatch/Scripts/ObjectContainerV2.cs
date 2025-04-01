@@ -17,12 +17,13 @@ public class ObjectContainerV2 : MonoBehaviour
             }
         }
 
-        // Play the destroy sound if assigned
-        if (audioSource != null && audioSource.clip != null)
+        // Play the destroy sound if assigned and if the tag is "correct" or "incorrect"
+        if ((other.CompareTag("correct") || other.CompareTag("Incorrect")) && audioSource != null && audioSource.clip != null)
         {
             audioSource.PlayOneShot(audioSource.clip);
         }
 
-        Destroy(other.gameObject);
+            Destroy(other.gameObject);
+        
     }
 }

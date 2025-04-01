@@ -28,6 +28,16 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 4145118795
       objectReference: {fileID: 0}
+    - target: {fileID: 1983443307951205731, guid: e029dc9023ed54a7e82415981ca8c15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Incorrect
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740437188075153808, guid: e029dc9023ed54a7e82415981ca8c15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Incorrect
+      objectReference: {fileID: 0}
     - target: {fileID: 4308594866053059888, guid: e029dc9023ed54a7e82415981ca8c15b,
         type: 3}
       propertyPath: GlobalObjectIdHash
@@ -43,10 +53,20 @@ PrefabInstance:
       propertyPath: GlobalObjectIdHash
       value: 106081323
       objectReference: {fileID: 0}
+    - target: {fileID: 6630710913965394751, guid: e029dc9023ed54a7e82415981ca8c15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Incorrect
+      objectReference: {fileID: 0}
     - target: {fileID: 7240592708567990097, guid: e029dc9023ed54a7e82415981ca8c15b,
         type: 3}
       propertyPath: m_TagString
       value: correct
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721337910334233603, guid: e029dc9023ed54a7e82415981ca8c15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Incorrect
       objectReference: {fileID: 0}
     - target: {fileID: 7882766412068108459, guid: e029dc9023ed54a7e82415981ca8c15b,
         type: 3}

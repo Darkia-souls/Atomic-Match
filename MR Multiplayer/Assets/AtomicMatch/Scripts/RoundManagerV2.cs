@@ -46,7 +46,7 @@ public class RoundManagerV2 : MonoBehaviour
 
     private IEnumerator StartGameAfterHint()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
         periodicTableHint.SetActive(false);
         ActivateNextPack();
     }
