@@ -62,7 +62,11 @@ public class RoundManagerV2 : MonoBehaviour
         // Spawn the next pack in order using the prefab's own transform
         if (currentIndex < atomObjectPackPrefabs.Count)
         {
-            GameObject newPack = Instantiate(atomObjectPackPrefabs[currentIndex]);
+            GameObject newPack = Instantiate(atomObjectPackPrefabs[currentIndex],
+                                 atomObjectPackPrefabs[currentIndex].transform.position,
+                                 atomObjectPackPrefabs[currentIndex].transform.rotation);
+
+            newPack.transform.SetParent(transform, true); // Keep world position
             instantiatedPacks.Add(newPack);
             currentIndex++;
         }
