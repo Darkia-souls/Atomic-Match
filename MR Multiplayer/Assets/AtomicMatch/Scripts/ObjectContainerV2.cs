@@ -3,18 +3,7 @@ using UnityEngine;
 public class ObjectContainerV2 : MonoBehaviour
 {
     public string containerSide; // "Blue" or "Red"
-    public AudioClip destroySound; // Assign this in the Inspector
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        // Get or add an AudioSource component
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-    }
+    public AudioSource audioSource; // Assign this in the Inspector
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,12 +17,13 @@ public class ObjectContainerV2 : MonoBehaviour
             }
         }
 
-        // Play the destroy sound if assigned
-        if (destroySound != null && audioSource != null)
+        // Play the destroy sound if assigned and if the tag is "correct" or "incorrect"
+        if ((other.CompareTag("correct") || other.CompareTag("Incorrect")) && audioSource != null && audioSource.clip != null)
         {
-            audioSource.PlayOneShot(destroySound);
+            audioSource.PlayOneShot(audioSource.clip);
         }
 
-        Destroy(other.gameObject);
+            Destroy(other.gameObject);
+        
     }
 }
