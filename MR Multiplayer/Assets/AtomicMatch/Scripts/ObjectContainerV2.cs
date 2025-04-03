@@ -3,7 +3,8 @@ using UnityEngine;
 public class ObjectContainerV2 : MonoBehaviour
 {
     public string containerSide; // "Blue" or "Red"
-    public AudioSource audioSource; // Assign this in the Inspector
+    public AudioSource correctSound; // Assign this in the Inspector
+    public AudioSource incorrectSound; // Assign this in the Inspector
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,13 +18,16 @@ public class ObjectContainerV2 : MonoBehaviour
             }
         }
 
-        // Play the destroy sound if assigned and if the tag is "correct" or "incorrect"
-        if ((other.CompareTag("correct") || other.CompareTag("Incorrect")) && audioSource != null && audioSource.clip != null)
+        // Play the correct or incorrect sound based on the object's tag
+        if (other.CompareTag("correct") && correctSound != null)
         {
-            audioSource.PlayOneShot(audioSource.clip);
+            correctSound.PlayOneShot(correctSound.clip);
+        }
+        else if (other.CompareTag("Incorrect") && incorrectSound != null)
+        {
+            incorrectSound.PlayOneShot(incorrectSound.clip);
         }
 
-            Destroy(other.gameObject);
-        
+        Destroy(other.gameObject);
     }
 }

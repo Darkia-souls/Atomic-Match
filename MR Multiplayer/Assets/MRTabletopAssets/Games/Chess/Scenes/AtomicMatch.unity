@@ -2112,7 +2112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerSide: Blue
-  audioSource: {fileID: 514773417}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 514773417}
 --- !u!114 &514773413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4249,7 +4250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerSide: Red
-  audioSource: {fileID: 1336407319}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 1336407319}
 --- !u!114 &1336407318
 MonoBehaviour:
   m_ObjectHideFlags: 0
