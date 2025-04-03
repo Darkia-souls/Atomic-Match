@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 2932923302855986156}
   serializedVersion: 2
   m_LocalRotation: {x: -0.62108374, y: 0.036079023, z: 0.78287745, w: -0.007505626}
-  m_LocalPosition: {x: 0.523, y: 0.178, z: -0.155}
-  m_LocalScale: {x: 2.9854581, y: 2.9854577, z: 2.9854572}
+  m_LocalPosition: {x: 1.578, y: 0.178, z: -0.155}
+  m_LocalScale: {x: 14.096729, y: 14.096726, z: 14.0967245}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2196639867350510939}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1294284738371021749, guid: c3ebe768da9d5884db42f4cc0ba6c54b, type: 3}
+  - {fileID: 2100000, guid: 1e9b400e560ff2f4e856393159b1fcf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,8 +113,8 @@ Transform:
   m_GameObject: {fileID: 4436936385936653717}
   serializedVersion: 2
   m_LocalRotation: {x: -0.62108374, y: 0.036079023, z: 0.78287745, w: -0.007505626}
-  m_LocalPosition: {x: 0.593, y: 0.049, z: 0.259}
-  m_LocalScale: {x: 2.9854581, y: 2.9854577, z: 2.9854572}
+  m_LocalPosition: {x: 1.292, y: 0.049, z: 0.584}
+  m_LocalScale: {x: 10.655857, y: 10.655856, z: 10.655853}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2196639867350510939}
@@ -150,7 +150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1294284738371021749, guid: c3ebe768da9d5884db42f4cc0ba6c54b, type: 3}
+  - {fileID: 2100000, guid: 1e9b400e560ff2f4e856393159b1fcf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,8 +199,8 @@ Transform:
   m_GameObject: {fileID: 7123469334872692011}
   serializedVersion: 2
   m_LocalRotation: {x: -0.62108374, y: 0.036079023, z: 0.78287745, w: -0.007505626}
-  m_LocalPosition: {x: -0.579, y: 0.35, z: 0.239}
-  m_LocalScale: {x: 2.9854581, y: 2.9854577, z: 2.9854572}
+  m_LocalPosition: {x: -1.531, y: 0.35, z: 0.239}
+  m_LocalScale: {x: 7.4586487, y: 7.4586477, z: 7.458647}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2196639867350510939}
@@ -285,8 +285,8 @@ Transform:
   m_GameObject: {fileID: 7544297869297592116}
   serializedVersion: 2
   m_LocalRotation: {x: -0.62108374, y: 0.036079023, z: 0.78287745, w: -0.007505626}
-  m_LocalPosition: {x: -0.476, y: 0.258, z: -0.393}
-  m_LocalScale: {x: 2.9854581, y: 2.9854577, z: 2.9854572}
+  m_LocalPosition: {x: -0.476, y: 0.258, z: -1.684}
+  m_LocalScale: {x: 11.117567, y: 11.117565, z: 11.117563}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2196639867350510939}
@@ -322,7 +322,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1294284738371021749, guid: c3ebe768da9d5884db42f4cc0ba6c54b, type: 3}
+  - {fileID: 2100000, guid: 1e9b400e560ff2f4e856393159b1fcf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,9 +393,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 972615eee92ad78418a311a7099db3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minScale: 0.9
+  minScale: 0.75
   maxScale: 1
-  speed: 0.3
+  speed: 0.5
 --- !u!1 &8896155911675930970
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,8 +423,8 @@ Transform:
   m_GameObject: {fileID: 8896155911675930970}
   serializedVersion: 2
   m_LocalRotation: {x: -0.62108374, y: 0.036079023, z: 0.78287745, w: -0.007505626}
-  m_LocalPosition: {x: -0.537, y: 0.079, z: 0.109}
-  m_LocalScale: {x: 2.9854581, y: 2.9854577, z: 2.9854572}
+  m_LocalPosition: {x: -1.102, y: 0.079, z: 0.43}
+  m_LocalScale: {x: 11.010566, y: 11.010565, z: 11.010562}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2196639867350510939}
@@ -460,7 +460,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1294284738371021749, guid: c3ebe768da9d5884db42f4cc0ba6c54b, type: 3}
+  - {fileID: 2100000, guid: 1e9b400e560ff2f4e856393159b1fcf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
