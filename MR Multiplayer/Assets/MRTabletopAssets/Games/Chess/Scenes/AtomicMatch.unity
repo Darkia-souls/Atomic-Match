@@ -2810,6 +2810,12 @@ Transform:
   - {fileID: 1336407315}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &976542312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 902706213730044651, guid: cdf2c69b46ed7fc41b0b3b8ede7639d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1306129695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &995326424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,6 +3948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 902706213730044651, guid: cdf2c69b46ed7fc41b0b3b8ede7639d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2457858020395009254, guid: cdf2c69b46ed7fc41b0b3b8ede7639d7,
         type: 3}
@@ -5180,6 +5191,7 @@ MonoBehaviour:
   periodicTableHint: {fileID: 7608715308331840723}
   playAgainButton: {fileID: 1281738351}
   answersGameObject: {fileID: 1799743497}
+  loadingBar: {fileID: 976542312}
 --- !u!4 &1844154524
 Transform:
   m_ObjectHideFlags: 0
@@ -5708,7 +5720,7 @@ PrefabInstance:
     - target: {fileID: 6724491654584833190, guid: 2dcd43c9f2dec0a459a7ab346d95e58d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -13,6 +13,7 @@ public class RoundManagerV2 : MonoBehaviour
     public GameObject periodicTableHint;
     public Button playAgainButton;
     public GameObject answersGameObject; // Reference to the answers GameObject
+    public GameObject loadingBar; // Reference to the loading bar or other object to deactivate
 
     private int blueScore = 0;
     private int redScore = 0;
@@ -40,6 +41,7 @@ public class RoundManagerV2 : MonoBehaviour
         periodicTableHint.SetActive(true);  // Show the hint at the start
         playAgainButton.gameObject.SetActive(false);  // Hide the Play Again button initially
         answersGameObject.SetActive(false);  // Hide the answers GameObject initially
+        loadingBar.SetActive(true);  // Activate the loading bar or other object initially
 
         StartCoroutine(StartGameAfterHint());
     }
@@ -47,7 +49,8 @@ public class RoundManagerV2 : MonoBehaviour
     private IEnumerator StartGameAfterHint()
     {
         yield return new WaitForSeconds(15f);
-        periodicTableHint.SetActive(false);
+        periodicTableHint.SetActive(false);  // Deactivate periodic table hint
+        loadingBar.SetActive(false);  // Deactivate the loading bar or other object
         ActivateNextPack();
     }
 
@@ -109,3 +112,4 @@ public class RoundManagerV2 : MonoBehaviour
         StartGame();
     }
 }
+
