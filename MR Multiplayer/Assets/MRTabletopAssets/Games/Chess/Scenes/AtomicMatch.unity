@@ -1643,6 +1643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SphereModda 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7880993161183361889, guid: 910451c830ef4ab49a08220075d2bbc6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
