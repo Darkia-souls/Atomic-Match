@@ -32,4 +32,3 @@ public class LoadingBar : MonoBehaviour
         Destroy(gameObject); // Destroys the game object
     }
 }
-
