@@ -19,10 +19,17 @@ public class LoadingBar : MonoBehaviour
     void StartLoading()
     {
         // Animate the X scale from full size to the final percentage
-        transform.DOScaleX(initialScale.x * finalScalePercentage, duration).SetEase(Ease.Linear);
+        transform.DOScaleX(initialScale.x * finalScalePercentage, duration).SetEase(Ease.Linear)
+            .OnKill(DestroyObject); // When animation completes, destroy the object
 
         // Optionally, adjust position to make sure the bar shrinks to the right
         transform.DOMoveX(initialPosition.x - (initialScale.x * (1 - finalScalePercentage) * 0.5f), duration).SetEase(Ease.Linear);
+    }
+
+    // Method to destroy the object
+    void DestroyObject()
+    {
+        Destroy(gameObject); // Destroys the game object
     }
 }
 
