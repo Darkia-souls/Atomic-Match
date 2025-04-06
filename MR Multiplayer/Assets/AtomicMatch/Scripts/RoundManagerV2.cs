@@ -11,6 +11,7 @@ public class RoundManagerV2 : MonoBehaviour
     public List<GameObject> atomObjectPackPrefabs; // Prefabs to instantiate
     public TextMeshPro winnerUI;
     public GameObject periodicTableHint;
+    public GameObject periodicTableHint2; // Second periodic table hint
     public Button playAgainButton;
     public GameObject answersGameObject; // Reference to the answers GameObject
 
@@ -38,6 +39,7 @@ public class RoundManagerV2 : MonoBehaviour
         currentIndex = 0;
 
         periodicTableHint.SetActive(true);  // Show the hint at the start
+        periodicTableHint2.SetActive(true); // Show the second hint at the start
         playAgainButton.gameObject.SetActive(false);  // Hide the Play Again button initially
         answersGameObject.SetActive(false);  // Hide the answers GameObject initially
 
@@ -48,6 +50,7 @@ public class RoundManagerV2 : MonoBehaviour
     {
         yield return new WaitForSeconds(15f);
         periodicTableHint.SetActive(false);
+        periodicTableHint2.SetActive(false); // Hide second hint
         ActivateNextPack();
     }
 

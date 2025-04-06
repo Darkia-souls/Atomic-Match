@@ -3,32 +3,33 @@ using DG.Tweening; // Ensure you have DOTween imported
 
 public class LoadingBar : MonoBehaviour
 {
-    [SerializeField] private float duration = 15f; // Duration of the loading effect
-    [SerializeField] private float finalScalePercentage = 0.01f; // Final scale percentage (default to 1%)
+    [SerializeField] private float duration = 15f;
+    [SerializeField] private float finalScalePercentage = 0.01f;
+
     private Vector3 initialScale;
     private Vector3 initialPosition;
+    private bool initialized = false;
 
-    void Start()
+    void OnEnable()
     {
-        initialScale = transform.localScale;
-        initialPosition = transform.position;
+        if (!initialized)
+        {
+            initialScale = transform.localScale;
+            initialPosition = transform.position;
+            initialized = true;
+        }
 
         StartLoading();
     }
 
     void StartLoading()
     {
-        // Animate the X scale from full size to the final percentage
-        transform.DOScaleX(initialScale.x * finalScalePercentage, duration).SetEase(Ease.Linear)
-            .OnKill(DestroyObject); // When animation completes, destroy the object
+        // Reset to initial values before starting the animation
+        transform.localScale = initialScale;
+        transform.position = initialPosition;
 
-        // Optionally, adjust position to make sure the bar shrinks to the right
+        // Animate again
+        transform.DOScaleX(initialScale.x * finalScalePercentage, duration).SetEase(Ease.Linear);
         transform.DOMoveX(initialPosition.x - (initialScale.x * (1 - finalScalePercentage) * 0.5f), duration).SetEase(Ease.Linear);
-    }
-
-    // Method to destroy the object
-    void DestroyObject()
-    {
-        Destroy(gameObject); // Destroys the game object
     }
 }
